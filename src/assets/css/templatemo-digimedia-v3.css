@@ -1,4 +1,49 @@
+/*
 
+TemplateMo 568 DigiMedia
+
+https://templatemo.com/tm-568-digimedia
+
+*/
+
+/* ---------------------------------------------
+Table of contents
+------------------------------------------------
+01. font & reset css
+02. reset
+03. global styles
+04. header
+05. banner
+06. features
+07. testimonials
+08. contact
+09. footer
+10. preloader
+11. search
+12. portfolio
+
+--------------------------------------------- */
+/* 
+---------------------------------------------
+font & reset css
+--------------------------------------------- 
+*/
+/* 
+---------------------------------------------
+reset
+--------------------------------------------- 
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+/* clear fix */
 .grid:after {
   content: '';
   display: block;
@@ -837,14 +882,14 @@ Banner Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 50px 0px 120px 0px;
+  padding: 226px 0px 120px 0px;
   position: relative;
   overflow: hidden;
 }
 
 .main-banner:after {
   content: '';
-  background-image: url(/images/slider-left-dec.jpg);
+  background-image: url(../images/slider-left-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -856,7 +901,7 @@ Banner Style
 
 .main-banner:before {
   content: '';
-  background-image: url(/images//slider-right-dec.jpg);
+  background-image: url(../images/slider-right-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
@@ -1174,7 +1219,7 @@ Services Style
 
 .services:after {
   content: '';
-  background-image: url(/images/services-left-dec.jpg);
+  background-image: url(../images/services-left-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -1186,7 +1231,7 @@ Services Style
 
 .services:before {
   content: '';
-  background-image: url(/images/services-right-dec.jpg);
+  background-image: url(../images/services-right-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
@@ -1349,7 +1394,7 @@ Free Quote
 */
 
 .free-quote {
-  background-image: url(/images/quote-bg-v3.jpg);
+  background-image: url(../images/quote-bg-v3.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1430,7 +1475,7 @@ Portfolio
 
 .our-portfolio:before {
   content: '';
-  background-image: url(/images/portfolio-right-dec.jpg);
+  background-image: url(../images/portfolio-right-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
@@ -1442,7 +1487,7 @@ Portfolio
 
 .our-portfolio:after {
   content: '';
-  background-image: url(/images/portfolio-left-dec.jpg);
+  background-image: url(../images/portfolio-left-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -1551,7 +1596,7 @@ Blog
 
 .blog:before {
   content: '';
-  background-image: url(/images/blog-left-dec.jpg);
+  background-image: url(../images/blog-left-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -1720,7 +1765,7 @@ contact
 
 
 form#contact:before {
-  background-image: url(/images/contact-top-right-v3.png);
+  background-image: url(../images/contact-top-right-v3.png);
   position: absolute;
   right: 0;
   top: 0;
@@ -1739,7 +1784,7 @@ form#contact:before {
 }
 
 form#contact:after {
-  background-image: url(/images/contact-bottom-right-v3.png);
+  background-image: url(../images/contact-bottom-right-v3.png);
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1869,7 +1914,7 @@ Footer Style
 */
 
 footer {
-  background-image: url(/images/footer-bg-v3.jpg);
+  background-image: url(../images/footer-bg-v3.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1918,7 +1963,7 @@ responsive
   }
   .main-banner {
     text-align: center;
-    padding: 30px 0px 30px 0px;
+    padding: 226px 0px 30px 0px;
   }
   .main-banner:before {
     display: none;

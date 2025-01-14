@@ -1,4 +1,49 @@
+/*
 
+TemplateMo 568 DigiMedia
+
+https://templatemo.com/tm-568-digimedia
+
+*/
+
+/* ---------------------------------------------
+Table of contents
+------------------------------------------------
+01. font & reset css
+02. reset
+03. global styles
+04. header
+05. banner
+06. features
+07. testimonials
+08. contact
+09. footer
+10. preloader
+11. search
+12. portfolio
+
+--------------------------------------------- */
+/* 
+---------------------------------------------
+font & reset css
+--------------------------------------------- 
+*/
+/* 
+---------------------------------------------
+reset
+--------------------------------------------- 
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+/* clear fix */
 .grid:after {
   content: '';
   display: block;
@@ -102,12 +147,12 @@ body {
 }
 
 ::selection {
-  background: #4da6e7;
+  background: #fa65b1;
   color: #fff !important;
 }
 
 ::-moz-selection {
-  background: #4da6e7;
+  background: #fa65b1;
   color: #fff !important;
 }
 
@@ -139,7 +184,7 @@ body {
 .section-heading h6 {
   font-size: 15px;
   font-weight: 700;
-  color: #4da6e7;
+  color: #726ae3;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
@@ -154,20 +199,20 @@ body {
 
 .section-heading h4 em {
   font-style: normal;
-  color: #4da6e7;
+  color: #726ae3;
 }
 
 .section-heading .line-dec {
   width: 50px;
   height: 2px;
-  background-color: #4da6e7;
+  background-color: #726ae3;
 }
 
 .border-first-button a {
   display: inline-block !important;
   padding: 10px 20px !important;
-  color: #4da6e7 !important;
-  border: 1px solid #4da6e7 !important;
+  color: #fa65b1 !important;
+  border: 1px solid #fa65b1 !important;
   border-radius: 23px;
   font-weight: 500 !important;
   letter-spacing: 0.3px !important;
@@ -175,10 +220,116 @@ body {
 }
 
 .border-first-button a:hover {
-  background-color: #4da6e7;
+  background-color: #fa65b1;
   color: #fff !important;
 }
 
+
+/* 
+---------------------------------------------
+intro
+--------------------------------------------- 
+*/
+
+
+.intro-banner {
+  text-align: center;
+  padding-top: 200px;margin-bottom: 100px;
+  position: relative;
+}
+
+.intro-banner:after {
+  content: '';
+  background-image: url(../images/slider-left-dec.jpg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 262px;
+  height: 625px;
+  z-index: 1;
+}
+/*
+.intro-banner:before {
+  content: '';
+  background-image: url(../images/slider-right-dec.jpg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  width: 1159px;
+  height: 797px;
+  z-index: 2;
+}
+*/
+
+.intro-banner img {
+  max-width: 152px;
+  margin-bottom: 30px;
+}
+
+.intro-banner h1 {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative; 
+  z-index: 2;
+}
+
+.intro-banner h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin-bottom: 20px;
+  position: relative; 
+  z-index: 2;
+}
+
+.intro-banner a {
+  display: inline-block !important;
+  padding: 10px 20px !important;
+  color: #fa65b1 !important;
+  border: 1px solid #fa65b1 !important;
+  border-radius: 23px;
+  font-weight: 500 !important;
+  letter-spacing: 0.3px !important;
+  transition: all .5s;
+  position: relative; 
+  z-index: 2;
+}
+
+.intro-banner a:hover {
+  background-color: #fa65b1;
+  color: #fff !important;
+}
+
+.demos {
+  padding-top: 60px;
+}
+
+.demo-item {
+  position: relative;
+  z-index: 2;
+}
+
+.demos img {
+  transition: all .5s;
+  border-radius: 23px;
+}
+
+.demos img:hover {
+  opacity: 1;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.25);
+}
+
+.demos h4 {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
 
 /* 
@@ -208,7 +359,7 @@ header
 }
 
 .pre-header ul.info li a:hover {
-  color: #4da6e7;
+  color: #fa65b1;
 }
 
 .pre-header ul.info li a i {
@@ -238,7 +389,7 @@ header
 }
 
 .pre-header ul.social-media li a:hover {
-  background-color: #4da6e7;
+  background-color: #fa65b1;
 }
 
 .background-header {
@@ -257,7 +408,7 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #4da6e7;
+  color: #fa65b1;
 }
 
 .background-header .nav li a.active {
@@ -269,7 +420,7 @@ header
   position: absolute;
   width: 100%;
   height: 1px;
-  background-color: #4da6e7;
+  background-color: #fa65b1;
   content: '';
   left: 50%;
   bottom: -20px;
@@ -376,12 +527,12 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #4da6e7!important;
+  color: #fa65b1!important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #4da6e7!important;
+  color: #fa65b1!important;
   opacity: 1;
 }
 
@@ -443,7 +594,7 @@ header
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
   background: #fff;
-  color: #4da6e7!important;
+  color: #fa65b1!important;
   padding-left: 25px;
 }
 
@@ -583,7 +734,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #4da6e7;
+  color: #fa65b1;
 }
 
 @media (max-width: 1200px) {
@@ -622,7 +773,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #4da6e7!important;
+    color: #fa65b1!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -684,7 +835,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #4da6e7!important;
+    color: #fa65b1!important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -798,7 +949,7 @@ preloader
     height: 16px;
     top: 12px;
     left: 15px;
-    background: #4da6e7;
+    background: #fa65b1;
     border-radius: 50%;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -821,7 +972,7 @@ preloader
     width: 16px;
     height: 16px;
     margin-left: 16px;
-    background: #4da6e7;
+    background: #fa65b1;
     border-radius: 50%;
 }
 
@@ -837,14 +988,14 @@ Banner Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 50px 0px 120px 0px;
+  padding: 226px 0px 120px 0px;
   position: relative;
   overflow: hidden;
 }
 
 .main-banner:after {
   content: '';
-  background-image: url(/images/slider-left-dec.jpg);
+  background-image: url(../images/slider-left-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -856,7 +1007,7 @@ Banner Style
 
 .main-banner:before {
   content: '';
-  background-image: url(/images//slider-right-dec.jpg);
+  background-image: url(../images/slider-right-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
@@ -874,7 +1025,7 @@ Banner Style
   text-transform: capitalize;
   font-size: 20px;
   font-weight: 700;
-  color: #4da6e7;
+  color: #fa65b1;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
@@ -980,7 +1131,7 @@ About Style
 }
 
 .first-skill-item .progress .progress-bar {
-  border-color: #4da6e7;
+  border-color: #fa65b1;
 }
 
 .second-skill-item .progress .progress-bar {
@@ -1174,7 +1325,7 @@ Services Style
 
 .services:after {
   content: '';
-  background-image: url(/images/services-left-dec.jpg);
+  background-image: url(../images/services-left-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -1186,7 +1337,7 @@ Services Style
 
 .services:before {
   content: '';
-  background-image: url(/images/services-right-dec.jpg);
+  background-image: url(../images/services-right-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
@@ -1324,7 +1475,7 @@ Services Style
 .services .left-text h4 {
   font-size: 20px;
   font-weight: 700;
-  color: #4da6e7 !important;
+  color: #fa65b1 !important;
 }
 
 .services .left-text p {
@@ -1349,7 +1500,7 @@ Free Quote
 */
 
 .free-quote {
-  background-image: url(/images/quote-bg-v3.jpg);
+  background-image: url(../images/quote-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1410,7 +1561,7 @@ Free Quote
   outline: none;
   border: none;
   margin-left: 30px;
-  background-color: #4da6e7;
+  background-color: #726ae3;
   font-size: 15px;
   color: #fff;
 }
@@ -1430,7 +1581,7 @@ Portfolio
 
 .our-portfolio:before {
   content: '';
-  background-image: url(/images/portfolio-right-dec.jpg);
+  background-image: url(../images/portfolio-right-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
@@ -1442,7 +1593,7 @@ Portfolio
 
 .our-portfolio:after {
   content: '';
-  background-image: url(/images/portfolio-left-dec.jpg);
+  background-image: url(../images/portfolio-left-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -1481,7 +1632,7 @@ Portfolio
 
 .portfolio-item:hover .down-content h4,
 .portfolio-item:hover .down-content span {
-  color: #4da6e7;
+  color: #fa65b1;
 }
 
 .portfolio-item .thumb img {
@@ -1539,7 +1690,7 @@ Portfolio
 
 .our-portfolio .owl-nav span:hover {
   color: #fff;
-  background-color: #4da6e7;
+  background-color: #fa65b1;
 }
 
 
@@ -1551,7 +1702,7 @@ Blog
 
 .blog:before {
   content: '';
-  background-image: url(/images/blog-left-dec.jpg);
+  background-image: url(../images/blog-left-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -1575,16 +1726,14 @@ Blog
   margin: 0 auto;
 }
 
+.show-up {
+  position: relative;
+  z-index: 200;
+}
+
 .blog-post {
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
   border-radius: 25px;
-  position: relative;
-  z-index: 2;
-}
-
-.show-up {
-  position: relative;
-  z-index: 222;
 }
 
 .blog-post .thumb img {
@@ -1603,7 +1752,7 @@ Blog
   font-size: 15px;
   color: #fff;
   padding: 8px 12px;
-  background-color: #4da6e7;
+  background-color: #726ae3;
   border-radius: 18px;
   display: inline-block;
 }
@@ -1676,7 +1825,7 @@ Blog
   font-size: 15px;
   color: #fff;
   padding: 8px 12px;
-  background-color: #4da6e7;
+  background-color: #726ae3;
   border-radius: 18px;
   display: inline-block;
 }
@@ -1720,7 +1869,7 @@ contact
 
 
 form#contact:before {
-  background-image: url(/images/contact-top-right-v3.png);
+  background-image: url(../images/contact-top-right.png);
   position: absolute;
   right: 0;
   top: 0;
@@ -1739,7 +1888,7 @@ form#contact:before {
 }
 
 form#contact:after {
-  background-image: url(/images/contact-bottom-right-v3.png);
+  background-image: url(../images/contact-bottom-right.png);
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1797,7 +1946,7 @@ form#contact #map iframe {
 }
 
 .fill-form .icon:hover a {
-  color: #4da6e7;
+  color: #fa65b1;
 }
 
 form#contact input {
@@ -1845,20 +1994,20 @@ form#contact button {
   background-color: #fff;
   font-size: 15px;
   font-weight: 400;
-  color: #4da6e7;
+  color: #fa65b1;
   margin-top: 30px;
   width: 100%;
   text-transform: capitalize;
   padding: 12px 25px;
   border-radius: 23px;
   letter-spacing: 0.25px;
-  border: 1px solid #4da6e7;
+  border: 1px solid #fa65b1;
   transition: all .3s;
   outline: none;
 }
 
 form#contact button:hover {
-  background-color: #4da6e7!important;
+  background-color: #fa65b1!important;
   color: #fff!important;
 }
 
@@ -1869,7 +2018,7 @@ Footer Style
 */
 
 footer {
-  background-image: url(/images/footer-bg-v3.jpg);
+  background-image: url(../images/footer-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1907,6 +2056,9 @@ responsive
 }
 
 @media (max-width: 992px) {
+  .intro-banner:before {
+    display: none;
+  } 
   form#contact {
     overflow: hidden;
   }
@@ -1918,7 +2070,7 @@ responsive
   }
   .main-banner {
     text-align: center;
-    padding: 30px 0px 30px 0px;
+    padding: 226px 0px 30px 0px;
   }
   .main-banner:before {
     display: none;
